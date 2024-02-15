@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>Mini word</title>
+</head>
+<body>
+    <form action="script" method="Post" name="Form1">
+        <div class="container">
+            <div class="column">
+                <label for="color" class="label">Choisir la couleur du texte</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div class="column">
+                <label for="size" class="label">Choisir la taille du texte</label>
+               <input type="number" id="size" name="size" min="8" max="72">
+            </div>
+            <label for="font" class="label">Choisir le font du texte</label>
+            <div class="column">
+                <select name="font" onchange="changeFont()">
+                    
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Tahoma">Tahoma</option>
+                        <option value="Palatino">Palatino</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Impact">Impact</option>
+                
+                                   
+                </select>
+            </div>
+        </div>
+        <div></div>
+        <textarea name="text" id="text1" cols="50" rows="10">Ecrire votre texte ici</textarea>
+        <p id="textecrit"></p>
+    </form>
+   
+    
+</body>
+<script src="script.js"></script>
+</html>
